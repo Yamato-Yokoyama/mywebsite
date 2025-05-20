@@ -1,0 +1,83 @@
+/* style.css */
+
+body {
+    /* Add padding to the top of the body to offset the fixed navbar */
+    /* The value should be roughly the height of your navbar */
+    padding-top: 70px;
+    font-family: 'Arial', sans-serif; /* Or your preferred font */
+    background-color: #212529; /* Bootstrap dark background color */
+    color: #f8f9fa; /* Bootstrap light text color */
+}
+
+.section {
+    /* min-height: 100vh; -- Use min-vh-100 on the section directly in HTML if you want full viewport height for a specific section like #home */
+    /* Sections already have py-5 (padding top and bottom) from Bootstrap for spacing */
+}
+
+#home {
+    /* Specific styling for the home section if needed */
+    /* background-color: #343a40; Slightly different dark for home */
+}
+
+#home h1 {
+    font-weight: 300; /* Lighter font weight for display text often looks good */
+}
+
+/* Customizing Project Cards (if Bootstrap defaults aren't quite right) */
+#projects.bg-light .card { /* Targeting cards specifically in the projects section if it has bg-light */
+    background-color: #fff; /* Ensure cards are light on light background */
+    color: #212529;
+}
+#projects .card-title {
+    color: #0d6efd; /* Bootstrap primary color */
+}
+
+/* If you have a dark theme for project cards on a dark section background */
+/*
+#projects .card {
+    background-color: #343a40;
+    border-color: #495057;
+}
+#projects .card-title {
+    color: #0dcaf0; / Bootstrap info color /
+}
+#projects .card-text {
+    color: #adb5bd;
+}
+*/
+
+
+/* Resume Section Skill Badges */
+#resume .badge {
+    font-size: 0.9rem;
+    padding: 0.5em 0.75em;
+}
+
+/* Contact Section Links */
+#contact a {
+    color: #0dcaf0; /* Bootstrap info color */
+    text-decoration: none;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Active Nav Link for Bootstrap Scrollspy */
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #fff; /* Or a brighter color like Bootstrap's info or warning */
+    font-weight: bold;
+}
+
+/* General link styling for the dark theme */
+a {
+    color: #6ea8fe; /* A lighter blue for dark backgrounds */
+}
+a:hover {
+    color: #8bb9fe;
+}
+
+/* Ensure light text on dark sections if not already covered */
+#hobbies, #contact {
+    /* These sections don't have bg-light, so they'll use the body's dark bg and light text by default */
+}
