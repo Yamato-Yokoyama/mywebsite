@@ -81,3 +81,14 @@ a:hover {
 #hobbies, #contact {
     /* These sections don't have bg-light, so they'll use the body's dark bg and light text by default */
 }
+
+/* About section text color for readability */
+#about .container {
+    color: #222;
+}
+#about .container h2 {
+    color: #111;
+}
+#about .container p {
+    color: #222;
+}

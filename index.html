@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbarNav">
             <div class="container">
-                <a class="navbar-brand" href="#home">Your Name</a>
+                <a class="navbar-brand" href="#home">Yamato Yokoyama</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -20,6 +20,9 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projects">Projects</a>
@@ -40,11 +43,62 @@
     </header>
 
     <main>
-        <section id="home" class="section d-flex flex-column justify-content-center align-items-center text-center min-vh-100">
-            <div class="container">
+        <section id="home" class="section d-flex flex-column justify-content-center align-items-center text-center min-vh-100 position-relative overflow-hidden" style="z-index:1;">
+            <video autoplay loop muted playsinline class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="z-index:0;opacity:0.25;object-fit:cover;pointer-events:none;">
+                <source src="Resources/IMG_1472.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="container position-relative" style="z-index:2;">
+                <img src="Resources/Yokoyama_Yamato_551-0867.jpg" alt="Yamato Yokoyama" class="rounded-circle shadow mb-4" style="width:180px;height:180px;object-fit:cover;border:5px solid #fff;">
                 <h1 class="display-3">Yamato Yokoyama</h1>
-                <p class="lead">Data Analyst | AI Engineer | LinkedIn Lover</p>
+                <p class="lead">Data Analyst | AI Engineer | LinkedIn Ambassador</p>
                 <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Work</a>
+            </div>
+        </section>
+        
+        <section id="about" class="section py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="mb-4">About Yamato</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card shadow-sm mb-4" style="background: linear-gradient(135deg, #e3f2fd 80%, #ffffff 100%); border: none;">
+                            <div class="card-body">
+                                <h4 class="card-title mb-3 text-primary">Currently</h4>
+                                <ul class="list-unstyled fs-5 text-start mx-auto" style="max-width:600px;">
+                                    <li class="mb-2">🎓 <strong>Computer Science student</strong> at Temple University Japan Campus</li>
+                                    <li class="mb-2">🔬 Passionate about:
+                                        <ul>
+                                            <li>Data Science/Analysis</li>
+                                            <li>Audio AI (like Elevenlabs)</li>
+                                            <li>Business (especially as a LinkedIn Ambassador!)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm mb-4" style="background: linear-gradient(135deg, #f1f8e9 80%, #ffffff 100%); border: none;">
+                            <div class="card-body">
+                                <h4 class="card-title mb-3 text-success">My Journey</h4>
+                                <ul class="list-unstyled fs-5 text-start mx-auto" style="max-width:600px;">
+                                    <li>🌏 <strong>Global Explorer:</strong> Visited: 🇺🇸 United States, 🇰🇷 South Korea, 🇲🇽 Mexico, 🇲🇾 Malaysia, 🇩🇪 Germany, 🇹🇭 Thailand, 🇻🇳 Vietnam</li>
+                                    <li>🏠 <strong>Homestay Programs:</strong> Since middle school, I've spent most summer breaks participating in homestay programs in various countries, broadening my global perspective.</li>
+                                    <li>🎓 <strong>Study Abroad:</strong> Completed a one-year study abroad program in Kentucky, USA (2019).</li>
+                                    <li>💼 <strong>Global Intern:</strong> Selected as a global intern by FPT Software Da Nang Vietnam, completing a 2-month data analysis internship.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm mb-4" style="background: linear-gradient(135deg, #fffde7 80%, #ffffff 100%); border: none;">
+                            <div class="card-body">
+                                <h4 class="card-title mb-3 text-warning">Active Roles</h4>
+                                <ul class="list-unstyled fs-5 text-start mx-auto" style="max-width:600px;">
+                                    <li>👥 Member of the LinkedIn Student Club</li>
+                                    <li>🌐 LinkedIn's official ambassador in Japan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="mt-4">Feel free to connect if you're curious about my experiences, particularly the homestay program, or anything else about me!</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -55,33 +109,63 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body d-flex flex-column">
-                                <h3 class="card-title">Project Title 1</h3>
-                                <p class="card-text">A brief description of your awesome project. Highlight key features and technologies used.</p>
-                                <a href="#" class="btn btn-outline-primary mt-auto">Learn More &raquo;</a>
+                                <h3 class="card-title">LinkedIn Profile Analysis with Power Bi</h3>
+                                <p class="card-text">LinkedIn CSV data exploration with DAX to visualize my network and activity.</p>
+                                <p class="mb-2">Impact & FB:
+                                    <ul>
+                                        <li>1239 Impresssion with 699 reach</li>
+                                        <li>WordCloud feature Suggestion to LinkedIn app is recomended by LinkedIn employee</li>
+                                    </ul>
+                                </p>
+                                <a href="Resources\LinkedInAnalysis.pdf" class="btn btn-outline-primary mt-auto">PDF Version Available &raquo;</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body d-flex flex-column">
-                                <h3 class="card-title">Project Title 2</h3>
-                                <p class="card-text">Another project where you solved an interesting problem or built something cool.</p>
-                                <a href="#" class="btn btn-outline-primary mt-auto">Learn More &raquo;</a>
+                                <h3 class="card-title">LinkedIn Student Club Career Week</h3>
+                                <p class="card-text">Completed Career Event held at LinkedIn Japan Office and Microsoft Japan Office for over 4000 Students opening the potential of LinkedIn and foster their career ownership.</p>
+                                <p class="mb-2">Impact:
+                                    <ul>
+                                        <li>Event cordination of workshop with LINE Yahoo, Notion, LinkedIn and Microsoft Copilot PM</li>
+                                    </ul>
+                                </p>
+                                <a href="https://www.linkedin.com/posts/makoto1118_%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E7%99%BB%E9%8C%B25200%E4%BA%BA%E9%81%94%E6%88%90linkedin-student-career-activity-7319873521512247296-vYTv?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdkfCEBloNuVqeiDCB3WGtxDWv972YH7AQ" class="btn btn-outline-primary mt-auto">Learn More &raquo;</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body d-flex flex-column">
-                                <h3 class="card-title">Project Title 3</h3>
-                                <p class="card-text">Showcase a diverse range of your skills through different projects.</p>
-                                <a href="#" class="btn btn-outline-primary mt-auto">Learn More &raquo;</a>
+                                <h3 class="card-title">LinkedIn Student Club IT team lead</h3>
+                                <p class="card-text">Founded IT team to work as a Consultant to improve internal work efficiency.</p>
+                                <p class="mb-2">Impact:
+                                    <ul>
+                                        <li>Slack implementation to online team and established DropIn contact for open chat</li>
+                                        <li>AI Prompt Engineering Coaching for Design team</li>
+                                    </ul>
+                                </p>
+                                <a href="#" class="btn btn-outline-primary mt-auto">No Preview Yet &raquo;</a>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>
+
+        
+        <!-- <section id="OfficeVisited " class="section py -5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Office Visited</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">LinkedIn Japan Office</h3>
+
+        </section>                         -->
 
         <section id="hobbies" class="section py-5">
             <div class="container">
@@ -89,19 +173,19 @@
                 <div class="row text-center">
                     <div class="col-md-4 mb-3">
                         <div class="p-3">
-                            <h3>Hobby 1</h3>
+                            <h3>Traveling and Language</h3>
                             <p>Brief description of your hobby.</p>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="p-3">
-                            <h3>Hobby 2</h3>
+                            <h3>Watching Baseball</h3>
                             <p>Something else you enjoy doing.</p>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="p-3">
-                            <h3>Hobby 3</h3>
+                            <h3>Anime & Moview </h3>
                             <p>Share a bit about your personality.</p>
                         </div>
                     </div>
@@ -113,18 +197,20 @@
             <div class="container text-center">
                 <h2 class="mb-4">My Resume</h2>
                 <p class="lead mb-4">Interested in learning more about my professional background? Download my resume!</p>
-                <a href="your-resume.pdf" download class="btn btn-success btn-lg">
+                <a href="Resources\Yamato_Yokoyama_Resume (3).pdf" download class="btn btn-success btn-lg">
                     Download Resume (PDF)
                 </a>
                 <div class="mt-5 text-start">
                     <h4>Key Skills:</h4>
                     <ul class="list-inline">
-                        <li class="list-inline-item"><span class="badge bg-primary">HTML5</span></li>
-                        <li class="list-inline-item"><span class="badge bg-primary">CSS3</span></li>
-                        <li class="list-inline-item"><span class="badge bg-primary">JavaScript</span></li>
-                        <li class="list-inline-item"><span class="badge bg-primary">Bootstrap</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">React</span></li>
-                        <li class="list-inline-item"><span class="badge bg-secondary">Node.js</span></li>
+                        <li class="list-inline-item"><span class="badge bg-primary">Python</span></li>
+                        <li class="list-inline-item"><span class="badge bg-primary">fastAPI</span></li>
+                        <li class="list-inline-item"><span class="badge bg-primary">SQL</span></li>
+                        <li class="list-inline-item"><span class="badge bg-primary">Power Bi</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary">Java</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary">C</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary">HTML</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary">CSS</span></li>
                         </ul>
                 </div>
             </div>
