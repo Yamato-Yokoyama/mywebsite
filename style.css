@@ -92,3 +92,22 @@ a:hover {
 #about .container p {
     color: #222;
 }
+
+/* Office Visited Carousel: match height to hobbies section and auto-slide */
+#office-visited .carousel-inner {
+    height: 340px;
+}
+#office-visited .carousel-item img {
+    height: 340px;
+    object-fit: cover;
+}
+#office-visited .carousel-caption {
+    font-size: 1.1rem;
+}
+
+/* About section: make cards more compact on smaller screens */
+@media (max-width: 991.98px) {
+    #about .card {
+        margin-bottom: 1.5rem;
+    }
+}
