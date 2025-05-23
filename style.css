@@ -94,6 +94,11 @@ a:hover {
 }
 
 /* Office Visited Carousel: match height to hobbies section and auto-slide */
+#office-visited h2,
+#obog h2 {
+    color: #222;
+}
+
 #office-visited .carousel-inner {
     height: 340px;
 }
